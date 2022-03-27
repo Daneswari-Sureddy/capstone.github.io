@@ -1,0 +1,240 @@
+body {
+  font-family: "Georgia", Times New Roman, Times, serif;
+  color: #444444;
+  margin-top: 30px;
+}
+.wow {
+  background-image: url(https://media.istockphoto.com/photos/the-karate-girl-with-black-belt-picture-id629867354?k=20&m=629867354&s=612x612&w=0&h=0y30Xm6ZhNtXbpdC009ZKrpPuBgNnQ_i2GL8JpRw_Mw=);
+  background-size: cover;
+}
+a {
+  color: #34b7a7;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Georgia", Times New Roman, Times, serif;
+}
+#main {
+  margin-top: 50px;
+}
+#header {
+  background: #e9e8e6;
+  box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
+  z-index: 997;
+  padding: 15px 0;
+}
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+  padding: 10px 0 10px 28px;
+}
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Georgia", Times New Roman, Times, serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #888888;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+}
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #34b7a7;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before,
+.navbar li:hover > a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 25px;
+}
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #222222;
+}
+#me {
+  width: 100%;
+  height: 100vh;
+  background: url("https://media.istockphoto.com/photos/laptop-stationery-and-flowers-on-a-pink-pastel-background-picture-id1257068380?k=20&m=1257068380&s=170667a&w=0&h=Eqs60pzbG_gPy-asA-ercEcYmc8DCBmxpYm9zdQ9SOk=")
+    top right;
+  background-size: cover;
+}
+#me .container {
+  padding-top: 70px;
+  position: relative;
+}
+@media (max-width: 992px) {
+  #me .container {
+    padding-top: 58px;
+  }
+}
+#me h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #222222;
+}
+#me h2 {
+  color: #6f6f6f;
+  margin: 10px 0 0 0;
+  font-size: 22px;
+}
+#me .btn-aboutme {
+  font-family: "Georgia", Times New Roman, Times, serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  background: #34b7a7;
+}
+#me .btn-aboutme:hover {
+  background: plum;
+}
+@media (min-width: 1024px) {
+  #me {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 992px) {
+  #me:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #me h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #me h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+section {
+  padding: 60px 0;
+}
+.section-bg {
+  background-color: pink;
+}
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #34b7a7;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+.section-title p {
+  margin-bottom: 0;
+}
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #555555;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+.about .content ul i {
+  font-size: 20px;
+  padding-right: 2px;
+  color: #34b7a7;
+}
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+.contact .info i {
+  font-size: 20px;
+  color: #34b7a7;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #effbf9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #222222;
+}
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #555555;
+}
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+button,
+.contact .php-email-form button[type="submit"] {
+  background: #34b7a7;
+  border: 0;
+  padding: 10px 30px 12px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+button:hover,
+.contact .php-email-form button[type="submit"]:hover {
+  background: plum;
+}
